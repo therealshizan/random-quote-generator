@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: JetBrains Mono;
+  transition: all 0.25s ease-in;
+}
+
+.quoteBox {
+  background: #f5f5f5;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  row-gap: 5rem;
+  padding: 5% 0;
+}
+
+.quoteContainer {
+  width: 991px;
+  margin: auto;
+}
+
+h2.quoteText {
+  border-left: 10px solid #f7df94;
+  padding-left: 5%;
+}
+
+.quoteInfo {
+  border-left: 10px solid #f5f5f5;
+  margin-top: 7.5%;
+  color: #404040;
+  padding: 2.5% 5% 2.5% 5%;
+  cursor: pointer;
+  transition: all 0.125s ease-in;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quoteInfo:hover {
+  background: #404040;
+  color: #f5f5f5;
+}
+
+h5.quoteGenre {
+  margin-top: 0.5rem;
+}
+
+.randomBtn {
+  background: #f5f5f5;
+  border: 0;
+  display: grid;
+  height: 10vh;
+  align-items: center;
+  justify-content: end;
+  padding-right: 5%;
+}
+
+.randomBtn button {
+  background: transparent;
+  border: 0;
+  display: flex;
+  column-gap: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Add a CSS class to handle the rotation animation */
+.rotate {
+  animation: rotateAnimation 0.5s linear;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h1.currentAuthor {
+  padding-left: 5%;
+  border-left: 10px solid #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5%;
+  background: #f5f5f5;
+  position: sticky;
+  top: 0px;
+  padding: 2.5rem;
+  border-bottom: 1px solid rgb(64 64 64 / 25%);
+}
+
+h1.currentAuthor svg {
+  cursor: pointer;
+}
